@@ -1,0 +1,122 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Del, ins y otras etiquetas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      :root {
+        font-size: 0.785rem;
+        font-family: "Fredoka", sans-serif;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      body {
+        background-color: var(--dark);
+      }
+      section {
+        width: 60%;
+        padding: 1em 2em;
+        background-color: var(--purple);
+        margin: 2em;
+      }
+      h1 {
+        border-bottom: 1px solid #111;
+        margin-bottom: 1em;
+        font-size: 2.5rem;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5em;
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 1.3em;
+      }
+      del {
+        color: var(--dark);
+        padding: 0 0.3em;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background: var(--pink);
+        background-image: linear-gradient(to right, var(--red), var(--pink), var(--red));
+        margin-bottom: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Varias etiquetas</h1>
+      <p>
+        El verano comenzará el <del datetime="2022-06-21">jueves</del>
+        <ins cite="https://astronomia.ign.es/inicio-de-las-estaciones"
+          >Martes</ins
+        >
+        21 de junio a las 11h 14m hora oficial peninsular, según cálculos del
+        Observatorio Astronómico Nacional.
+      </p>
+      <hr />
+      <p>
+        El concierto comienza a las <time datetime="20:00"> 20:00 </time> y
+        podrás disfrutar del grupo hasta las
+        <time datetime="PT2H30M"> 2h:30m </time>.
+      </p>
+      <hr />
+      <p>
+        PHP es un lenguaje de programación <mark>interpretado</mark>, que se
+        ejecuta del lado del servidor.
+      </p>
+      <hr />
+      <p>Search results for "star":</p>
+      <p>
+        A <mark>star</mark> is a sphere of massive, luminous plasma held
+        together by its own gravity.
+      </p>
+      <p>
+        The closest <mark>star</mark> to Earth is the Sun, which is the source
+        of most of the planet's energy.
+      </p>
+    </section>
+    <section>
+      <h1>Medio de comunicación</h1>
+      <p>
+        La radio (entendida como radiofonía o radiodifusión, términos no
+        estrictamente sinónimos) es un medio de comunicación que se basa en el
+        envío de señales de audio a través de ondas de radio, si bien el término
+        se usa también para otras formas de envío de audio a distancia como la
+        radio por Internet.
+      </p>
+      <hr />
+      <p>
+        La televisión es un sistema para la transmisión y recepción de imágenes
+        en movimiento y sonido a distancia que emplea un mecanismo de difusión.
+        La transmisión puede ser efectuada por medio de ondas de radio, por
+        redes de televisión por cable, televisión por satélite o IPTV, de los
+        que existen en modalidades abierta y de pago.
+      </p>
+    </section>
+  </body>
+</html>

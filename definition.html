@@ -1,0 +1,75 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definiciones, abreviaturas y texto invertido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      :root {
+        font-size: 0.785rem;
+        font-family: "Fredoka", sans-serif;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      body {
+        background-color: var(--dark);
+      }
+      div {
+        width: 60%;
+        padding: 1em 2em;
+        background-color: var(--purple);
+        margin: 2em;
+      }
+      h1 {
+        border-bottom: 1px solid #111;
+        margin-bottom: 1em;
+      }
+      p {
+        font-family: "Smooch Sans", sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5em;
+      }
+      dfn {
+        color: #fff;
+        font-weight: bold;
+        padding: 0 0.3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>¿Qué es HTML?</h1>
+      <p>
+        <dfn><abbr title="HyperText Markup Language"> HTML </abbr></dfn> es un
+        lenguaje de marcas de hipertexto, utilizado para estructurar contenido
+        basado en la web.
+      </p>
+      <p>
+        Las <dfn>etiquetas</dfn> HTML marcan el principio y el final de los
+        elementos HTML.
+      </p>
+      <p><bdo dir="rtl"> Este párrafo irá de derecha a izquierda. </bdo></p>
+    </div>
+  </body>
+</html>
