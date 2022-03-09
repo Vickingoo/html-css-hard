@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accesible forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      :root {
+        font-size: 0.785rem;
+        font-family: "Lato", sans-serif;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      body {
+        background-color: var(--dark);
+      }
+      form {
+        background-color: #eee;
+        max-width: 80%;
+        margin: 2em auto;
+        padding: 2em;
+        border-radius: 0.3rem;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      div{
+          margin-bottom: 1em;
+      }
+      input {
+        padding: 0.5em;
+        border: 1px solid var(--dark);
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        margin-bottom: 1em;
+        width: 100%;
+      }
+      input[type="search"] {
+        background: url("img/glass.png") right no-repeat;
+        background-size: 32px 39px;
+        background-position: 90% center;
+      }
+      input[type="email"]:valid {
+        background: var(--green);
+      }
+      input[type="email"]:invalid {
+        background: var(--red);
+      }
+      input:focus {
+        border: 2px solid var(--blue);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input type="search" name="search" placeholder="Search" id="" autofocus />
+      <input type="tel" name="telefono" />
+      <input type="url" name="sitio_web" />
+      <input type="email" name="email" />
+      <input type="number" name="numeros" step="2" min="20" max="30" />
+      <p>Configuración de audio:</p>
+      <div>
+        <input type="range" id="volumen" name="volumen" min="0" max="11" />
+        <label for="volumen"> Volumen</label>
+      </div>
+      <div>
+        <input
+          type="range"
+          id="graves"
+          name="graves"
+          min="0"
+          max="100"
+          value="90"
+          step="10"
+        />
+        <label for="graves"> Graves</label>
+      </div>
+      <input name="pais" list="nombre_pais" />
+      <datalist id="nombre_pais">
+        <option value="Afganistan"></option>
+        <option value="Albania"></option>
+        <option value="Algeria"></option>
+        <option value="Andorra"></option>
+        <option value="Armenia"></option>
+        <option value="Australia"></option>
+        <option value="Austria"></option>
+        <option value="Azerbaijan"></option>
+      </datalist>
+    </form>
+  </body>
+</html>
