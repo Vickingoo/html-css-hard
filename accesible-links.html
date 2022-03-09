@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Accesible links</title>
+    <style>
+      a {
+        padding: 2em;
+        display: block;
+      }
+      a:focus {
+        padding: 2em;
+        background: #aad165;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a
+          href="https://www.foxitsoftware.com/es-la/"
+          tabindex="1"
+          title="Enlace a la web de descarga del lector pdf Foxit Reader"
+          >Foxit Reader</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://code.visualstudio.com/"
+          tabindex="3"
+          title="Enlace a la web de descarga del editor VS Code"
+          >Visual Studio Code</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://developer.mozilla.org/es/"
+          tabindex="2"
+          title="Documentación web de MDN"
+          >MDN web docs</a
+        >
+      </li>
+      <li><a href="https://www.google.es/" accesskey="g">Google</a></li>
+    </ul>
+  </body>
+</html>

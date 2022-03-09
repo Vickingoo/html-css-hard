@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optimized tables</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      :root {
+        font-size: 0.785rem;
+        font-family: "Lato", sans-serif;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      body{
+          background-color: var(--dark);
+      }
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+        margin: 2em auto;
+      }
+      td {
+        padding: 0.5em;
+        line-height: 0, 5em;
+        font-size: 1.5em;
+      }
+      col.first {
+        width: 2em;
+        background-color: var(--blue);
+      }
+      col.second {
+        width: 4em;
+        background-color: var(--green);
+      }
+      col.third {
+        width: 8em;
+        background-color: var(--orange);
+        padding-left: 1em;
+      }
+      colgroup.other col {
+        width: 3em;
+        background-color: var(--pink);
+      }
+      colgroup.other col:nth-child(2) {
+        background-color: var(--purple);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <colgroup>
+        <col class="first" />
+        <col class="second" />
+        <col class="third" />
+      </colgroup>
+      <colgroup class="other">
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr>
+          <td>first</td>
+          <td>second</td>
+          <td>third</td>
+          <td>other</td>
+          <td>other</td>
+          <td>other</td>
+        </tr>
+        <tr>
+          <td>first</td>
+          <td>second</td>
+          <td>third</td>
+          <td>other</td>
+          <td>other</td>
+          <td>other</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
