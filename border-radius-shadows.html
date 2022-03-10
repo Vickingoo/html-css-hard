@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border radius</title>
+    <style>
+      #lipsum {
+        background: #aad165;
+        width: 80%;
+        border: 5px solid #8b2;
+        border-radius: 5px;
+        padding: 2%;
+        margin: 3% auto;
+        /* Adding shadows */
+        box-shadow: 1em 1em black;
+        /* Blur and spreading */
+        box-shadow: 5px 5px 3px 1px #999;
+        /* Adding shadow to the text*/
+        text-shadow: -2px 2px 2px #fff; font-size:2em;
+      }
+      /* inset shadow 
+      .button {
+        padding: 1em;
+        border: 0;
+        margin: 2em 3.8em;
+        font-size: 0.8rem;
+        color: white;
+        border-radius: 0.5em;
+        background-image: linear-gradient(to bottom, #57b, #148);
+        box-shadow: 0.1em 0.1em 0.5em #124;
+      }
+      .button:active {
+        box-shadow: inset 0 0 0.5em #124, inset 0 0.5em 1em rgba(0, 0, 0, 0.4);
+      }
+      /* Plain design */
+      .button {
+        padding: 1em;
+        border: 0;
+        margin: 2em 3.8em;
+        color: white;
+        background-color: #57b;
+        font-size: 1rem;
+        padding: 0.8em;
+        box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.15);
+      }
+      .button:hover {
+        background-color: #456ab6;
+      }
+      .button:active {
+        background-color: #148;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="lipsum">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+        semper suscipit rhoncus. Cras feugiat faucibus neque, at aliquam dolor
+        semper non. Vivamus metus felis, aliquet sed posuere et, elementum at
+        velit. Vestibulum enim sapien, dapibus in convallis ac, luctus non mi.
+        Sed ut pharetra erat. Nam facilisis sit amet sapien fringilla pharetra.
+        Sed condimentum posuere nisl, rhoncus scelerisque leo sodales vitae.
+        Mauris purus arcu, venenatis a sem non, ultricies venenatis ligula.
+        Mauris interdum quam eros, vitae mollis diam luctus nec. Nam metus
+        purus, fringilla id porta et, vulputate vel arcu.
+      </p>
+    </div>
+    <button class="button">Check out!</button>
+  </body>
+</html>

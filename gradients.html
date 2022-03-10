@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Degradados</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      :root {
+        font-size: 0.785rem;
+        font-family: "Lato", sans-serif;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      .fade {
+        height: 200px;
+        width: 400px;
+        margin: 2em auto;
+        background-image: linear-gradient(to right, white, blue);
+        /* Expresed in degrees */
+        background-image: linear-gradient(360deg, white, blue);
+        /* Rainbow gradient*/
+        background-image: linear-gradient(
+          to right,
+          var(--red),
+          var(--orange),
+          var(--yellow),
+          var(--green),
+          var(--blue),
+          var(--indigo),
+          var(--pink)
+        );
+        /* Multiple colors */
+        background-image: linear-gradient(
+          90deg,
+          var(--red),
+          white,
+          var(--blue)
+        );
+        /* Multiple colors with different units*/
+        background-image: linear-gradient(
+          90deg,
+          var(--red) 10%,
+          white 30%,
+          var(--blue) 60%
+        );
+        /* Repeating colors, like a progress bar */
+        background-image: repeating-linear-gradient(
+          -45deg,
+          #57b,
+          #57b 10px,
+          #148 10px,
+          #148 20px
+        );
+        border-radius: 0.3em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fade"></div>
+  </body>
+</html>

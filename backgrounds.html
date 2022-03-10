@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border radius</title>
+    <style>
+      .blend {
+        min-height: 400px;
+        max-width: 80%;
+        margin: auto;
+        background-image: url("img/whale.jpg"), url("img/whale.jpg");
+        background-color: #148;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: luminosity;
+      }
+      .multiple {
+        min-height: 400px;
+        max-width: 80%;
+        margin: auto;
+        background-image: url("img/whale.jpg"), url("img/whale.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -30vw, 30vw;
+        background-blend-mode: multiply;
+      }
+      div {
+        margin-top: 2em !important;
+        margin-bottom: 2em !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blend"></div>
+    <div class="multiple"></div>
+  </body>
+</html>
