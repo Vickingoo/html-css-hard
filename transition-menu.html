@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      :root {
+        font-size: 0.785rem;
+        font-family: "Lato", sans-serif;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      body {
+        background-color: var(--dark);
+        padding: 1em;
+        font-size: 1.3rem;
+      }
+      .dropdown__toggle {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid var(--green);
+        color: var(--green);
+        background-color: white;
+        font: inherit;
+        text-decoration: none;
+        transition: background-color 0.2s linear;
+      }
+      .dropdown__toggle:hover {
+        background-color: hsl(280, 15%, 95%);
+      }
+      .dropdown__drawer {
+        position: absolute;
+        background-color: #fff;
+        width: 10em;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease-out;
+      }
+      .dropdown.is-open .dropdown__drawer {
+        height: auto;
+      }
+
+      .menu {
+        padding-left: 0;
+        margin: 0;
+        list-style: none;
+      }
+      .menu > li + li > a {
+        border-top: 0;
+      }
+      .menu > li > a {
+        display: block;
+        padding: 0.5em 1em;
+        color: var(--green);
+        background-color: #fff;
+        text-decoration: none;
+        transition: all 0.2s linear;
+        border: 1px solid var(--green);
+      }
+      .menu > li > a:hover {
+        background-color: hsl(280, 15%, 95%);
+        color: hsl(280, 25%, 10%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dropdown" aria-haspopup="true">
+      <button class="dropdown__toggle">Menu</button>
+      <div class="dropdown__drawer">
+        <ul class="menu" role="menu">
+          <li role="menuitem">
+            <a href="/features">Features</a>
+          </li>
+          <li role="menuitem">
+            <a href="/pricing">Pricing</a>
+          </li>
+          <li role="menuitem">
+            <a href="/support">Support</a>
+          </li>
+          <li role="menuitem">
+            <a href="/about">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p><a href="/read-more">Read more</a></p>
+    <script type="text/javascript">
+      (function () {
+        var toggle = document.getElementsByClassName("dropdown__toggle")[0];
+        var dropdown = toggle.parentElement;
+        toggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          dropdown.classList.toggle("is-open");
+        });
+      })();
+    </script>
+  </body>
+</html>

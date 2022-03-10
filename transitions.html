@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka&family=Lato&family=Smooch+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+      :root {
+        font-size: 0.785rem;
+        font-family: "Lato", sans-serif;
+        --blue: #0d6efd;
+        --indigo: #6610f2;
+        --purple: #6f42c1;
+        --pink: #d63384;
+        --red: #dc3545;
+        --orange: #fd7e14;
+        --yellow: #ffc107;
+        --green: #198754;
+        --teal: #20c997;
+        --cyan: #0dcaf0;
+        --dark: #292a2b;
+      }
+      body {
+        background-color: #aabbaa;
+        padding: 1em;
+      }
+      p {
+        color: #fff;
+        background-color: var(--blue);
+        font-size: 1.3rem;
+        margin: 2em 0;
+        padding: .5em;
+        transition: font-size .5s, color 0.3s linear 1s;
+      }
+      p:hover {
+        color: var(--dark);
+        font-size: 1.5rem;
+      }
+      .box {
+        border-style: solid;
+        border-width: 1px;
+        display: block;
+        width: 10vw;
+        height: 10vw;
+        margin: 3em;
+        background-color: var(--blue);
+        transition: width 2s, height 2s, background-color 2s, padding 2s, transform 2s;
+      }
+      .box:hover {
+        background-color: var(--pink);
+        width: 20vw;
+        height: 20vw;
+        padding: 1em;
+        transform: rotate(180deg);
+      }
+      nav {
+        margin: 2em auto;
+      }
+      nav a {
+        color: #fff;
+        background-color: #333;
+        transition: all 1s ease-out;
+        padding: 20px 30px;
+      }
+      nav a:hover,
+      nav a:focus {
+        color: #333;
+        background-color: #5499c7;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Links</a>
+    </nav>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      lobortis viverra posuere. Vestibulum egestas consectetur nunc maximus
+      fringilla.
+    </p>
+    <div class="box">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+      lobortis viverra posuere. Vestibulum egestas consectetur nunc maximus
+      fringilla.
+    </div>
+  </body>
+</html>
