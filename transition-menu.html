@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transitions</title>
+    <title>Transitions Menu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -87,9 +87,14 @@
     </style>
   </head>
   <body>
+    <!--aria-haspopup: On any item that activates the display of a drop-down menu. 
+      This typically applies to all top-level menu items and any menu item that has submenus.-->
     <div class="dropdown" aria-haspopup="true">
       <button class="dropdown__toggle">Menu</button>
       <div class="dropdown__drawer">
+        <!--The role attributes allow the creator of a page to add information to their HTML 
+          documents that can then be automatically extracted by a machine to obtain information 
+          about the purpose of each page element.-->
         <ul class="menu" role="menu">
           <li role="menuitem">
             <a href="/features">Features</a>
